@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | South Park</title>
+
+    <link rel="shortcut icon" href="src/img/kenny.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <h1>South Park Tic Tac Toe</h1>
+    <hr>
+
+    <!-- Player's names: -->
+    <section id="players">
+        <span>
+            <label for="player1">Player 1: </label>
+            <input type="text" id="player1" name="player1" placeholder="Player 1 name">
+        </span>
+        <span>|</span>
+        <span>
+            <label for="player2">Player 2: </label>
+            <input type="text" id="player2" name="player2" placeholder="Player 2 name">
+        </span>
+    </section>
+
+    <button id="start" onclick="startGame()">Start new game</button>
+
+    <h2>Turn:</h2>
+
+    <!-- Game board: -->
+    <section id="gameBoard">
+        <span class="game-area" data-area="0.0"></span>
+        <span class="game-area" data-area="0.1"></span>
+        <span class="game-area" data-area="0.2"></span>
+
+        <span class="game-area" data-area="1.0"></span>
+        <span class="game-area" data-area="1.1"></span>
+        <span class="game-area" data-area="1.2"></span>
+
+        <span class="game-area" data-area="2.0"></span>
+        <span class="game-area" data-area="2.1"></span>
+        <span class="game-area" data-area="2.2"></span>
+    </section>
+
+    <script src="src/script/index.js"></script>
+</body>
+</html>

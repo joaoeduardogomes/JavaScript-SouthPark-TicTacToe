@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+:root{
+    --color01: #034159;
+    --color02: #025951;
+    --color03: #02735E;
+    --color04: #038C3E;
+    --color05: #0CF25D;
+    --color06: #232323;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color01);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--color05);
+    font-weight: bold;
+}
+
+section#players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+section#players label {
+    font-weight: bold;
+}
+section#players input {
+    border-radius: 10px;
+    border: 2px solid var(--color03);
+    padding: .3rem;
+}
+
+label[for="player1"]:before{
+    display: inline-block;
+    background: url("../img/stan.svg") no-repeat 0 0;
+    content: '';
+    background-size: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin: -10px auto;
+}
+label[for="player2"]:before {
+    display: inline-block;
+    background: url("../img/cartman.svg") no-repeat 0 0;
+    content: '';
+    background-size: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin: -10px auto;
+}
+
+button#start {
+    display: block;
+    margin: 2rem auto;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: .3rem 1rem;
+    color: var(--color06);
+    background-color: var(--color05);
+    border: 3px solid var(--color04);
+    transition: all .5s ease-in;
+}
+button#start:hover {
+    background-color: var(--color06);
+    border-color: var(--color06);
+    color: var(--color05);
+}
+
+span#turnPlayer {
+    color: #fff;
+}
+
+section#gameBoard {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+    background-color: var(--color06);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+section#gameBoard span.game-area {
+    background-color: var(--color03);
+    border: 3px solid var(--color02);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.354);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: border-color .2s ease-in;
+}
+section#gameBoard span.game-area:hover {
+    border-color: var(--color05);
+}
+
+section#gameBoard span.win {
+    background-color: var(--color05);
+    border-color: red;
+}

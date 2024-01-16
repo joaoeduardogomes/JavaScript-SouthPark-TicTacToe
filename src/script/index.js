@@ -139,9 +139,7 @@ function getWinRegions() {
 
 function handleWin(areas) {
     areas.forEach((area) => {
-        console.log(area)
         const winArea = document.querySelector(`[data-area="${area}"]`).classList.add('win');
-        console.log(winArea)
     });
 
     const winner = turnPlayer;

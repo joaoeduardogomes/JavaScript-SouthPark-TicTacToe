@@ -26,6 +26,7 @@ h1, h2 {
 
 section#players {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;

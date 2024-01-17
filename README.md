@@ -21,7 +21,7 @@ Understanding the logic behind a tic-tac-toe game proved to be quite challenging
 
 ## How to use
 
-insert link
+[You can try this game at this github pages link](https://joaoeduardogomes.github.io/JavaScript-SouthPark-TicTacToe/)
 
 ## Notes
 
